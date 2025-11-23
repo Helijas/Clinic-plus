@@ -34,7 +34,7 @@ ol {
 /* ---- Шрифты---- */
 @font-face {
     font-family: "inter";
-    src: url(/src/fonts/InterVariable.woff2);
+    src: url(./src/fonts/InterVariable.woff2);
 }
 
 
