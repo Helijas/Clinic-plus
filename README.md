@@ -67,13 +67,13 @@ AJAX (Fetch):
 
 
 Таблица для сохранения заявок:
-CREATE TABLE requests (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(255) NOT NULL,
-  email VARCHAR(255) NOT NULL,
-  phone VARCHAR(50) NOT NULL,
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
+- CREATE TABLE requests (
+-   id INT AUTO_INCREMENT PRIMARY KEY,
+-   name VARCHAR(255) NOT NULL,
+-   email VARCHAR(255) NOT NULL,
+-   phone VARCHAR(50) NOT NULL,
+-   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+- );
 
 
 🖼️ Lightbox
