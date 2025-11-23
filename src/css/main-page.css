@@ -46,7 +46,7 @@
     left: 0;
     width: clamp(1.25rem, 1.136rem + 0.568vi, 1.563rem);
     height: clamp(1.25rem, 1.136rem + 0.568vi, 1.563rem);
-    background-image: url("/src/img/list-icon.svg");
+    background-image: url("../src/img/list-icon.svg");
     background-size: contain;
     background-repeat: no-repeat;
 }
