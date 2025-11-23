@@ -1,4 +1,4 @@
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".about-slider", {
     spaceBetween: 20,
     freeMode: {
         enabled: false,
@@ -23,8 +23,8 @@ const swiper = new Swiper(".swiper", {
     },
 
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".about-button-next",
+        prevEl: ".about-button-prev",
     },
 });
 
@@ -52,10 +52,5 @@ const documentsSlider = new Swiper(".documents-slider", {
             enabled: false,
         },
         },
-    },
-
-    navigation: {
-        nextEl: ".n",
-        prevEl: ".p",
     },
 });
