@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заполните форму</title>
+    <link rel="stylesheet" href="./src/css/form.css">
+    <link rel="stylesheet" href="./src/css/global-style.css">
+    <link rel="stylesheet" href="../src/css/header.css">
+    <link rel="stylesheet" href="/src/css/footer.css">
+</head>
+<body>
+    
+    <div class="header__notice">
+        <div class="container">
+            Имеются противопоказания, необходимо проконсультироваться со специалистом 18+
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="header-container container">
+            <div class="header__logo">
+                <a href="/" class="header__logo-link">
+                    <img src="../src/img/Logo.svg" alt="Logo">
+                </a>
+            </div>
+        
+            <nav class="header__nav nav">
+                <ul class="header-nav__list">
+                    <li class="header-nav__item"><a href="#" class="header-nav__link">Услуги</a></li>
+                    <li class="header-nav__item"><a href="#" class="header-nav__link">Этапы лечения</a></li>
+                    <li class="header-nav__item"><a href="#" class="header-nav__link">О нас</a></li>
+                    <li class="header-nav__item"><a href="#" class="header-nav__link">Отзывы</a></li>
+                    <li class="header-nav__item"><a href="#" class="header-nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+        
+            <div class="header__contacts">
+                <div class="header__contacts-info">
+                    <a href="tel:89061800041" class="header__phone">8 (906) 180-00-41</a>
+                    <div class="header__worktime">Работаем 24/7</div>
+                </div>
+                
+                <button class="header__btn button button--primary" type="button">
+                    Заказать звонок
+                </button>
+        
+                <button class="burger" type="button" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        
+            <nav class="mobile-menu" id="mobile-menu">
+                <div class="mobile-menu__inner">
+                    <div class="header-container header-container__mobile">
+                        <div class="header__logo">
+                            <a href="/" class="header__logo-link">
+                                <img src="../src/img/Logo.svg" alt="Logo">
+                            </a>
+                        </div>
+                    
+                        <div class="header__contacts">
+                            <div class="header__contacts-info">
+                                <a href="tel:89061800041" class="header__phone">8 (906) 180-00-41</a>
+                                <div class="header__worktime">Работаем 24/7</div>
+                            </div>
+                    
+                            <button class="mobile-menu__close" type="button" aria-label="Закрыть меню">
+                                ✕
+                            </button>
+                        </div>
+                    </div>
+                    
+                
+                    <ul class="mobile-menu__list">
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#steps">Этапы лечения</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                
+                    <div class="mobile-menu__bottom">
+                        <a class="mobile-menu__phone" href="tel:+79061800041">8 (906) 180-00-41</a>
+                        <p class="mobile-menu__worktime">Работаем 24/7</p>
+                
+                        <button class="mobile-menu__cta button--primary" type="button">
+                        Заказать звонок
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="form">
+        <div class="form-container container">
+            <h2>Оставьте заявку</h2>
+    
+            <div id="form-error" style="color:red; margin-bottom:10px; display:none;"></div>
+            <div id="form-success" style="color:green; margin-bottom:10px; display:none;">
+                Спасибо! Ваша заявка отправлена.
+            </div>
+            
+            <form class="request-form" id="request-form">
+                <label>
+                    Имя:
+                    <input type="text" name="name" placeholder="Ваше имя" required>
+                </label>
+                <label>
+                    Email:
+                    <input type="email" name="email" placeholder="Ваша почта" required>
+                </label>
+                <label>
+                    Телефон:
+                    <input type="tel" name="phone" placeholder="Номер телефона" required>
+                </label>
+                <button type="submit" class="button--primary">Отправить</button>
+            </form>
+        </div> 
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="footer-container container">
+            <p>Имеются противопоказания. Проконсультируйтесь с врачом.</p>
+        </div>
+    </footer>
+
+    <script src="./src/js/form.js"></script>
+    <script src="./src/js/burger.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,234 @@
+/* Верхняя голубая плашка */
+.header__notice {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #D0E8F9;
+    font-size: clamp(0.813rem, 0.744rem + 0.341vi, 1rem);
+    line-height: 1.4;
+    padding: clamp(0.5rem, 0.341rem + 0.795vi, 0.938rem) 0;
+    text-align: center;
+    color: #577F9C;
+}
+
+.header{
+  width: 100%;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  padding: auto;
+}
+
+/* Основной блок хедера */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: clamp(0.625rem, 0.511rem + 0.568vi, 0.938rem) 10px;
+    background-color: #ffffff;
+    gap: 20px;
+}
+
+/* Лого */
+.header__logo {
+    flex: 0 0 auto;
+    width: clamp(7rem, 0.556rem + 13.426vi, 10.625rem);
+}
+
+/* Навигация */
+.header__nav {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.header-nav__list {
+    display: flex;
+    align-items: center;
+    gap: clamp(1rem, -4.091rem + 7.955vi, 1.875rem);
+}
+
+.header-nav__item {
+    list-style: none;
+}
+
+.header-nav__link {
+    font-size: clamp(0.875rem, 0.83rem + 0.227vi, 1rem);
+    color: #383838;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    white-space: nowrap;
+}
+
+.header-nav__link:hover {
+    color: #0DA3FF;
+}
+
+
+/* Контакты справа */
+.header__contacts {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: clamp(1.25rem, 1.023rem + 1.136vi, 1.875rem);
+}
+.header__contacts-info {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.header__phone {
+    font-weight: 600;
+    font-size: clamp(0.813rem, 0.699rem + 0.568vi, 1.125rem);
+    color: #0DA3FF;
+    text-decoration: none;
+}
+
+.header__phone:hover {
+    text-decoration: underline;
+}
+
+.header__worktime {
+    font-size: clamp(0.688rem, 0.619rem + 0.341vi, 0.875rem);
+    color: #3838388C;
+}
+
+.burger{
+    display: none;
+}
+.header__mobile-menu{
+    display: none;
+}
+
+/* ---- Адаптив ---- */
+
+@media (max-width: 1024px){
+    .header__nav{
+        display: none;
+    }
+    .header__btn{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+}
+
+/* ---- Бургег ---- */
+/* Кнопка-бургер */
+.burger {
+    width: 26px;
+    height: 18px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .burger span {
+    display: block;
+    height: 2px;
+    margin-bottom: 5px;
+    background-color: #0DA3FF;
+    border-radius: 2px;
+  }
+  
+  .burger span:last-child {
+    margin-bottom: 0;
+  }
+
+  .header-container__mobile{
+    padding: clamp(0.625rem, 0.511rem + 0.568vi, 0.938rem) 10px;
+  }
+  
+  /* Мобильное меню (оверлей) */
+  .mobile-menu {
+    position: fixed;
+    inset: 0;
+    background-color: #f0f8ff;      /* светло-голубой фон как на макете */
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+  }
+  
+  .mobile-menu__inner {
+    position: relative;
+    margin: 0 auto;
+    height: 100vh;
+    /* padding: 24px 24px 32px; */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Кнопка закрытия (крестик справа сверху) */
+  .mobile-menu__close {
+    top: 16px;
+    right: 16px;
+    border: none;
+    background: transparent;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+    color: #1890ff;
+  }
+  
+  /* Список пунктов меню */
+  .mobile-menu__list {
+    list-style: none;
+    padding: 20px 10px;
+  }
+  
+  .mobile-menu__list li + li {
+    margin-top: 15px;
+  }
+  
+  .mobile-menu__list a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #383838;
+  }
+  
+  /* Нижняя часть с телефоном и кнопкой */
+  .mobile-menu__bottom {
+    margin-top: auto;
+    padding: 10px;
+  }
+  
+  .mobile-menu__phone {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #0DA3FF;
+    text-decoration: none;
+  }
+  
+  .mobile-menu__worktime {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 0 20px;
+    color: #3838388C;
+  }
+  
+  /* Кнопка "Заказать звонок" */
+  .mobile-menu__cta {
+    width: 100%;
+  }
+  
+  /* Состояние: меню открыто */
+  .mobile-menu--open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  /* Блокировка скролла под меню */
+  .body--locked {
+    overflow: hidden;
+  }

@@ -1,0 +1,33 @@
+.form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: clamp(1.563rem, 0.767rem + 3.977vi, 3.75rem) 0;
+}
+
+.form h2{
+    margin-bottom: clamp(1.563rem, 0.767rem + 3.977vi, 2.75rem);;
+}
+
+.request-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.request-form label{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.request-form label input{
+    width: 100%;
+    border-radius: 999px;
+    border: 1px solid #0DA3FF;
+    min-height: 30px;
+    padding: 10px 20px;
+}

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./src/css/global-style.css">
+    <link rel="stylesheet" href="./src/css/main-page.css">
+    <link rel="stylesheet" href="../src/css/header.css">
+    <link rel="stylesheet" href="/src/css/footer.css">
+</head>
+<body>
+    <div class="header__notice">
+        <div class="container">
+            Имеются противопоказания, необходимо проконсультироваться со специалистом 18+
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="header-container container">
+            <div class="header__logo">
+                <a href="/" class="header__logo-link">
+                    <img src="../src/img/Logo.svg" alt="Logo">
+                </a>
+            </div>
+        
+            <nav class="header__nav nav">
+                <ul class="header-nav__list">
+                    <li class="header-nav__item"><a href="#" class="header-nav__link">Услуги</a></li>
+                    <li class="header-nav__item"><a href="#" class="header-nav__link">Этапы лечения</a></li>
+                    <li class="header-nav__item"><a href="#" class="header-nav__link">О нас</a></li>
+                    <li class="header-nav__item"><a href="#" class="header-nav__link">Отзывы</a></li>
+                    <li class="header-nav__item"><a href="#" class="header-nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+        
+            <div class="header__contacts">
+                <div class="header__contacts-info">
+                    <a href="tel:89061800041" class="header__phone">8 (906) 180-00-41</a>
+                    <div class="header__worktime">Работаем 24/7</div>
+                </div>
+                
+                <button class="header__btn button button--primary" type="button">
+                    Заказать звонок
+                </button>
+        
+                <button class="burger" type="button" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        
+            <nav class="mobile-menu" id="mobile-menu">
+                <div class="mobile-menu__inner">
+                    <div class="header-container header-container__mobile">
+                        <div class="header__logo">
+                            <a href="/" class="header__logo-link">
+                                <img src="../src/img/Logo.svg" alt="Logo">
+                            </a>
+                        </div>
+                    
+                        <div class="header__contacts">
+                            <div class="header__contacts-info">
+                                <a href="tel:89061800041" class="header__phone">8 (906) 180-00-41</a>
+                                <div class="header__worktime">Работаем 24/7</div>
+                            </div>
+                    
+                            <button class="mobile-menu__close" type="button" aria-label="Закрыть меню">
+                                ✕
+                            </button>
+                        </div>
+                    </div>
+                    
+                
+                    <ul class="mobile-menu__list">
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#steps">Этапы лечения</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                
+                    <div class="mobile-menu__bottom">
+                        <a class="mobile-menu__phone" href="tel:+79061800041">8 (906) 180-00-41</a>
+                        <p class="mobile-menu__worktime">Работаем 24/7</p>
+                
+                        <button class="mobile-menu__cta button--primary" type="button">
+                        Заказать звонок
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-wrapper">
+            <div class="hero-container container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Срочный вызов<br> врача-нарколога</h1>
+                    <ul class="hero-list">
+                        <li class="hero-list__item">Сохраняем анонимность, не требуем паспорт и не ставим на учёт</li>
+                        <li class="hero-list__item">Помощь квалифицированного врача на дому</li>
+                        <li class="hero-list__item">Приедем на адрес за 20 минут</li>
+                        <li class="hero-list__item">Первичная консультация - бесплатно</li>
+                    </ul>
+                    <div class="hero-buttons">
+                        <button class="hero-button button--primary">Получить помощь</button>
+                        <button class="hero-button button--secondary">Заказать звонок</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR SERVICES SECTION -->
+    <section class="services">
+        <div class="services-wrapper">
+            <div class="services-container container">
+                <h2 class="services-title">Наши услуги</h2>
+
+                <div class="services-cards">
+
+                    <div class="services-card">
+                        <img class="services-card__image" src="/src/img/doctor-work.jpg"></img>
+                        <div class="services-card__content">
+                            <h4 class="services-card__title">Cтандартная терапия</h4>
+                            <p class="services-card__text">Для облегчения похмельного синдрома и прерывания запоя. А также при алкогольном отравлении</p>
+                            <div class="services-card__buttons">
+                                <div class="services-card__button-price">от 2400 ₽</div>
+                                <button class="services-card__button button--primary">Начать лечение</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="services-card">
+                        <img class="services-card__image" src="/src/img/medecine.png"></img>
+                        <div class="services-card__content">
+                            <h4 class="services-card__title">Усиленная терапия</h4>
+                            <p class="services-card__text">Рекомендуется для облегчения похмелья и прерывания запоев длительностью до недели</p>
+                            <div class="services-card__buttons">
+                                <div class="services-card__button-price">от 5800 ₽</div>
+                                <button class="services-card__button button--primary">Начать лечение</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="services-card">
+                        <img class="services-card__image" src="/src/img/rehub.png"></img>
+                        <div class="services-card__content">
+                            <h4 class="services-card__title">Восстановление+</h4>
+                            <p class="services-card__text">Для облегчения похмельного синдрома и прерывания запоя. А также при алкогольном отравлении</p>
+                            <div class="services-card__buttons">
+                                <div class="services-card__button-price">от 15 800 ₽</div>
+                                <button class="services-card__button button--primary">Начать лечение</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="services-card">
+                        <img class="services-card__image" src="/src/img/minmedicine.png"></img>
+                        <div class="services-card__content">
+                            <h4 class="services-card__title">Максимальная терапия</h4>
+                            <p class="services-card__text">Для облегчения похмельного синдрома и прерывания запоя. А также при алкогольном отравлении</p>
+                            <div class="services-card__buttons">
+                                <div class="services-card__button-price">от 18 800 ₽</div>
+                                <button class="services-card__button button--primary">Начать лечение</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="services-card">
+                        <img class="services-card__image" src="/src/img/koded.jpg"></img>
+                        <div class="services-card__content">
+                            <h4 class="services-card__title">Кодирование+</h4>
+                            <p class="services-card__text">Рекомендуется для облегчения похмелья и прерывания запоев длительностью до недели</p>
+                            <div class="services-card__buttons">
+                                <div class="services-card__button-price">от 3200 ₽</div>
+                                <button class="services-card__button button--primary">Начать лечение</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="services-card">
+                        <img class="services-card__image" src="/src/img/homerun.jpg"></img>
+                        <div class="services-card__content">
+                            <h4 class="services-card__title">Выезд нарколога на дом</h4>
+                            <p class="services-card__text">Для облегчения похмельного синдрома и прерывания запоя. А также при алкогольном отравлении</p>
+                            <div class="services-card__buttons">
+                                <div class="services-card__button-price">от 3500 ₽</div>
+                                <button class="services-card__button button--primary">Начать лечение</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- OUR SERVICES SECTION -->
+    <section class="stages">
+        <div class="stages-wrapper">
+            <div class="stages-container container">
+                <h2 class="stages-title">Этапы лечения</h2>
+                <div class="stages-columns">
+
+                    <div class="stages-column">
+                        <div class="stages-column__num">01</div>
+                        <div class="stages-column__line"><div class="stages-divider"></div></div>
+                        <div class="stages-column__content">
+                            <img class="stages-image" src="/src/img/Diagnostik.svg" alt="dig">
+                            <p class="stages-text">Диагностика<br> состояния</p>
+                        </div>
+                    </div>
+                    <div class="stages-column">
+                        <div class="stages-column__num">02</div>
+                        <div class="stages-column__line"><div class="stages-divider"></div></div>
+                        <div class="stages-column__content">
+                            <img class="stages-image" src="/src/img/plan.svg" alt="plan">
+                            <p class="stages-text">Составление<br> плана лечения</p>
+                        </div>
+                    </div>
+                    <div class="stages-column">
+                        <div class="stages-column__num">03</div>
+                        <div class="stages-column__line"><div class="stages-divider"></div></div>
+                        <div class="stages-column__content">
+                            <img class="stages-image" src="/src/img/car.svg" alt="car">
+                            <p class="stages-text">Снятие<br> симптомов</p>
+                        </div>
+                    </div>
+                    <div class="stages-column">
+                        <div class="stages-column__num">04</div>
+                        <div class="stages-column__line"><div class="stages-divider"></div></div>
+                        <div class="stages-column__content">
+                            <img class="stages-image" src="/src/img/medicine.svg" alt="med">
+                            <p class="stages-text">Восстановление<br> организма</p>
+                        </div>
+                    </div>
+                    <div class="stages-column">
+                        <div class="stages-column__num">05</div>
+                        <div class="stages-column__line"><div class="stages-divider"></div></div>
+                        <div class="stages-column__content">
+                            <img class="stages-image" src="/src/img/consult.svg" alt="cons">
+                            <p class="stages-text">Бесплатные<br> консультации</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stages-rows">
+
+                    <div class="stage-row">
+                        <div class="stage-row__content">
+                            <img class="stages-image" src="/src/img/Diagnostik.svg" alt="dig">
+                            <p class="stages-text">Диагностика<br> состояния</p>
+                        </div>
+                        <div class="stage-row__num stages-column__num">01</div>
+                    </div>
+                    <div class="stage-row">
+                        <div class="stage-row__content">
+                            <img class="stages-image" src="/src/img/plan.svg" alt="plan">
+                            <p class="stages-text">Составление плана<br> лечения</p>
+                        </div>
+                        <div class="stage-row__num stages-column__num">02</div>
+                    </div>
+                    <div class="stage-row">
+                        <div class="stage-row__content">
+                            <img class="stages-image" src="/src/img/car.svg" alt="car">
+                            <p class="stages-text">Снятие<br> симптомов</p>
+                        </div>
+                        <div class="stage-row__num stages-column__num">03</div>
+                    </div>
+                    <div class="stage-row">
+                        <div class="stage-row__content">
+                            <img class="stages-image" src="/src/img/medicine.svg" alt="med">
+                            <p class="stages-text">Восстановление<br> организма</p>
+                        </div>
+                        <div class="stage-row__num stages-column__num">04</div>
+                    </div>
+                    <div class="stage-row">
+                        <div class="stage-row__content">
+                            <img class="stages-image" src="/src/img/consult.svg" alt="cons">
+                            <p class="stages-text">Бесплатные<br> консультации</p>
+                        </div>
+                        <div class="stage-row__num stages-column__num">05</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about">
+        <div class="about-wrapper">
+            <div class="about-container container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 class="about-title">О клинике</h2>
+                        <p class="about-description">Наши квалифицированные врачи и наркологи предлагают широкий спектр наркологических услуг, включая стационарное лечение, кодирование, и многие другие виды лечения. Мы заботимся о каждом пациенте и гарантируем высокое качество нашей работы. Не стесняйтесь обращаться к нам в любое время, мы всегда готовы оказать наркологическую помощь.</p>
+                        <ul class="about-list">
+                            <li class="about-list__item"><img class="about-list__img" src="/src/img/person.svg" alt=""><p>Квалифицированные врачи-наркологи</p></li>
+                            <li class="about-list__item"><img class="about-list__img" src="/src/img/medkit.svg" alt=""><p>Находим решение даже в сложных ситуациях</p></li>
+                            <li class="about-list__item"><img class="about-list__img" src="/src/img/medplan.svg" alt=""><p>Используем импортные проверенные препараты</p></li>
+                            <li class="about-list__item"><img class="about-list__img" src="/src/img/medlic.svg" alt=""><p>Лицензия Л041-01177-91/00561129</p></li>
+                        </ul>
+                    </div>
+
+                    <div class="about-slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="about-slide swiper-slide"><img src="/src/img/medwoman.png" alt=""></div>
+                            <div class="about-slide swiper-slide"><img src="/src/img/doctor-work.jpg" alt=""></div>
+                            <div class="about-slide swiper-slide"><img src="/src/img/homerun.jpg" alt=""></div>
+                        </div>
+
+                        <div class="swiper-navigation">
+                            <div class="swiper-button-prev">
+                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="50" height="50" rx="25" fill="#0DA3FF"/>
+                                <path d="M27 19L21 25L27 31" stroke="white" stroke-width="3"/>
+                                </svg>
+                            </div>
+                            <div class="swiper-button-next">
+                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="50" height="50" rx="25" transform="matrix(-1 0 0 1 50 0)" fill="#0DA3FF"/>
+                                <path d="M23 19L29 25L23 31" stroke="white" stroke-width="3"/>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                <div class="about-documents">
+
+                    <h4 class="about-documents__title">Имеем все необходимые документы для предоставления медицинских услуг:</h4>
+
+                    <div class="swiper documents-slider">
+                        <div class="documents-wrapper swiper-wrapper">
+                            <div class="documents-item swiper-slide"><img class="documents-item__image" src="/src/img/doc1.png" alt=""></div>
+                            <div class="documents-item swiper-slide"><img class="documents-item__image" src="/src/img/doc2.png" alt=""></div>
+                            <div class="documents-item swiper-slide"><img class="documents-item__image" src="/src/img/doc3.png" alt=""></div>
+                            <div class="documents-item swiper-slide"><img class="documents-item__image" src="/src/img/doc4.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="document-lightbox">
+
+    </section>
+
+    <section class="document-lightbox" id="documentLightbox">
+        <div class="document-lightbox__inner">
+            <button class="document-lightbox__close" aria-label="Закрыть">×</button>
+            <img class="document-lightbox__img" src="" alt="">
+        </div>
+    </section>
+
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script type="module" src="/src/js/burger.js"></script>
+<script src="/src/js/swiper.js"></script>
+<script src="/src/js/lightbox.js"></script>
+</html>

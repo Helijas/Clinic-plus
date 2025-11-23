@@ -1,0 +1,132 @@
+/* ---- Базовое обнуление стилей ---- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+/* ---- Шрифты---- */
+@font-face {
+    font-family: "inter";
+    src: url(/src/fonts/InterVariable.woff2);
+}
+
+
+/* ---- Глобальные стили для общих классов ---- */
+body, html {
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "inter", sans-serif;
+    font-weight: 400;
+    position: relative;
+}
+
+.container{
+    max-width: 1220px;
+    width: 100%;
+    align-self: center;
+    padding: 0 10px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 600;
+}
+
+h1{
+    font-size: clamp(2.125rem, 1.489rem + 3.182vi, 3.875rem);
+    line-height: 1.05;
+    margin-bottom: clamp(1.25rem, 0.795rem + 2.273vi, 2.5rem);
+    font-weight: 600;
+}
+
+h2{
+    color: #383838;
+    font-size: clamp(1.875rem, 1.307rem + 2.841vi, 3.438rem);
+    font-weight: 600;
+    line-height: 1.05em;
+}
+
+h4{
+    font-size: clamp(1.25rem, 1.159rem + 0.455vi, 1.5rem);
+    color: #383838;
+    line-height: 1.25em;
+}
+
+p{
+    font-size: clamp(0.875rem, 0.83rem + 0.227vi, 1rem);
+    font-weight: 400;
+    line-height: 1.56em;
+    color: #383838;
+}
+
+/* Кнопки */
+
+.button--primary {
+    background-color: #0DA3FF;
+    color: #ffffff;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    padding: 15px clamp(1.188rem, 1.051rem + 0.682vi, 1.563rem);
+    border: none;
+    cursor: pointer;
+    font-size: clamp(0.875rem, 0.83rem + 0.227vi, 1rem);
+    font-weight: 500;
+}
+.button--primary:hover {
+    background-color: #0DA3FFD6;
+}
+
+.button--secondary{
+    background-color: #0da2ff00;
+    color: #0DA3FF;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    padding: 15px 25px;
+    border: none;
+    cursor: pointer;
+    font-size: clamp(0.875rem, 0.83rem + 0.227vi, 1rem);
+    font-weight: 500;
+    border: 1px solid #0DA3FF;
+}
+
+.button--secondary:hover{
+    background-color: #0DA3FF1A;
+    border: 1px solid #00000000;
+}
