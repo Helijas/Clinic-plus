@@ -53,4 +53,9 @@ const documentsSlider = new Swiper(".documents-slider", {
         },
         },
     },
+
+    navigation: {
+        nextEl: ".n",
+        prevEl: ".p",
+    },
 });
