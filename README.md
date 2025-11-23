@@ -58,6 +58,11 @@ AJAX (Fetch):
      schema.sql
 
 
+На сайте реализованы 2 страницы:
+- Главная - index.html
+- Страница с формой - form.html
+
+
 Таблица для сохранения заявок:
 CREATE TABLE requests (
   id INT AUTO_INCREMENT PRIMARY KEY,
