@@ -41,24 +41,24 @@ AJAX (Fetch):
 
 Структура проекта:
 
-/clinic-plus
-│  index.html
-│  form.html
-│
-├─ src/
-│   ├─ css/
-│   ├─ js/
-│   ├─ img/
-│   └─ fonts/
-│
-├─ backend/
-│   DB.php
-│   FormValidator.php
-│   config.php
-│   submit.php
-│
-└─ sql/
-     schema.sql
+- /clinic-plus
+-   index.html
+- │  form.html
+- │
+- ├─ src/
+- │   ├─ css/
+- │   ├─ js/
+- │   ├─ img/
+- │   └─ fonts/
+- │
+- ├─ backend/
+- │   DB.php
+- │   FormValidator.php
+- │   config.php
+- │   submit.php
+- │
+- └─ sql/
+-      schema.sql
 
 
 На сайте реализованы 2 страницы:
