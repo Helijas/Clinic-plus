@@ -160,7 +160,7 @@
   .mobile-menu__inner {
     position: relative;
     margin: 0 auto;
-    height: 100vh;
+    height: 80vh;
     /* padding: 24px 24px 32px; */
     display: flex;
     flex-direction: column;
